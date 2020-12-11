@@ -7,8 +7,8 @@
             <Hash>
                 <Item Key="JavaScript">
                     <Array>
-                        <Item>thirdparty/jquery-qrcode/jquery.qrcode.min.js</Item>
 						<Item>Core.Customer.SharedSecretGenerator.js</Item>
+                        <Item>thirdparty/jquery-qrcode/jquery.qrcode.min.js</Item>
                     </Array>
                 </Item>
             </Hash>
