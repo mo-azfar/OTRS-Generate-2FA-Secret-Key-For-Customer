@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_config version="2.0" init="Config">
+	<Setting Name="Loader::Module::CustomerPreferences###002-CustomerPreferences" Required="0" Valid="1">
+        <Description Translatable="1">Loader shared key generator module registration for the customer interface preferences.</Description>
+        <Navigation>Frontend::Customer::ModuleRegistration::Loader</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="JavaScript">
+                    <Array>
+                        <Item>Core.Customer.SharedSecretGenerator.js</Item>
+                    </Array>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+		<Setting Name="Loader::Module::AdminCustomerUser###002-Framework" Required="0" Valid="1">
+        <Description Translatable="1">Loader shared key generator module registration for the customer interface preferences at Admin page.</Description>
+        <Navigation>Frontend::Admin::ModuleRegistration::Loader</Navigation>
+        <Value>
+            <Hash>
+                <Item Key="JavaScript">
+                    <Array>
+                        <Item>Core.Customer.SharedSecretGenerator.js</Item>
+                    </Array>
+                </Item>
+            </Hash>
+        </Value>
+    </Setting>
+</otrs_config>
