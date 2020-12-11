@@ -30,6 +30,7 @@ Core.Customer.SharedSecretGenerator = (function (TargetNS) {
         var i, r, tempLetter, sharedSecret;
 		
         $("#UserGoogleAuthenticatorSecretKey").parent().append("<button id=\"GenerateUserGoogleAuthenticatorSecretKey\" type=\"button\" title=\"Click Update After Generate to Save\" class=\"CallForAction\"><span>" + Core.Language.Translate("Generate") + "</span></button>");
+		$("#UserGoogleAuthenticatorSecretKey").parent().append("<div id=\"qrcode\"></div>");
 		$("#GenerateUserGoogleAuthenticatorSecretKey").on("click", function(){
             sharedSecret = "";
 
@@ -45,6 +46,22 @@ Core.Customer.SharedSecretGenerator = (function (TargetNS) {
             }
 
             $("#UserGoogleAuthenticatorSecretKey").val(sharedSecret);
+			
+			// Clear Previous QR Code
+			$('#qrcode').empty();
+
+			$('#qrcode').css({
+			'margin' : '0 auto',
+			'text-align' : 'center'
+			})
+			
+			var url = "otpauth://totp/Customer?secret="+sharedSecret+"&issuer=OTRS 6 (CE)";
+			
+			// Generate and Output QR Code
+			$('#qrcode').html("<h4 align=\"center\">1. Open Your Authentication App and Scan the QR Code Below. <br>2. Click Update Button Below To Confirm.</h4><br/>");
+			$('#qrcode').qrcode({width: '130',height: '130',text: url });
+			
+			
        });
     }
 
