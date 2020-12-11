@@ -6,6 +6,8 @@ Paypal: [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif
 1. By default, after enabling 2FA function, secret key generator only available at agent profile page.  
 2. This module add the same fuction to the admin customer page and customer preferences page.  
   
+   credit: Roy/root otterhub
+  
  [![admin-cu.png](https://i.postimg.cc/zBqYtm39/admin-cu.png)](https://postimg.cc/5HKryRB3)  
    
  [![customer-preferences-2fa.png](https://i.postimg.cc/HnxDmQwz/customer-preferences-2fa.png)](https://postimg.cc/R6jbQJbJ)  
