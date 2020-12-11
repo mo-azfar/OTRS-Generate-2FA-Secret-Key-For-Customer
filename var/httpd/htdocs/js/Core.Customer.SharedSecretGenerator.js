@@ -30,7 +30,7 @@ Core.Customer.SharedSecretGenerator = (function (TargetNS) {
         var i, r, tempLetter, sharedSecret;
 		
         $("#UserGoogleAuthenticatorSecretKey").parent().append("<button id=\"GenerateUserGoogleAuthenticatorSecretKey\" type=\"button\" title=\"Click Update After Generate to Save\" class=\"CallForAction\"><span>" + Core.Language.Translate("Generate") + "</span></button>");
-		    $("#GenerateUserGoogleAuthenticatorSecretKey").on("click", function(){
+		$("#GenerateUserGoogleAuthenticatorSecretKey").on("click", function(){
             sharedSecret = "";
 
             for (i = 0; i < letters.length; i++) {
