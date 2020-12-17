@@ -1,5 +1,6 @@
 # OTRS-Generate-2FA-Secret-Key-For-Customer
-Add ability to generate 2 Factor Authentication secret key at customer profile and preferences page    
+- Built for OTRS 6.0.x CE  
+- Add ability to generate 2 Factor Authentication secret key at customer profile and preferences page    
   
 Paypal: [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/MohdAzfar?locale.x=en_US)      
 
